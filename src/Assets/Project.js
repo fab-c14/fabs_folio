@@ -13,10 +13,10 @@ var Project = ({name,pic,sourceCode,liveLink,desc,picAlt})=>{
         <>
         {/* for now description is not used later we may use it */}
       
-            <Row>
+            <Row className="w-100">
                 <Col>
                 <Fade left cascade duration={1500}>
-                    <div className='mw6 mw7-ns georgia'>
+                    <div className='georgia fl w-100'>
                         <h1 className='f2'>{name}</h1>
                         <p>
                         {desc}
@@ -29,14 +29,13 @@ var Project = ({name,pic,sourceCode,liveLink,desc,picAlt})=>{
                 </Col>
                 <Col>
                 <Fade right cascade duration={2000}>
-                    <div className='mw4-ns mw6'>
+                    <div className='w-100 h-100 v-center center mt5'>
                         
-                        <img src={pic} alt="Image Not Found"  className='mw6 ma2 br3 shadow-1 glow' width={'380'} height={'220'}/>
+                        <img src={pic} alt="Image Not Found"  className=' br3 shadow-2  tc center ma1 pa1 glow w-100 h-75 v-center' />
                     </div>                        
                  </Fade>
                 </Col>
             </Row>
-          
             <hr />
         </>
     )

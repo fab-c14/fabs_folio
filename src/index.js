@@ -9,10 +9,22 @@ import Footer from './Components/Footer';
 import {Fade} from 'react-reveal';
 import Contact from './Components/Contact';
 import 'tachyons'
-
+import ParticlesBackground from "./Components/ParticlesBackground";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+   <ParticlesBackground className="particles" style={
+	{
+		position:"fixed",
+		top:"0",
+		right:"0",
+		left:"0",
+		bottom:"0",
+		zIndex:"-1"
+	}
+}
+/>
     <Fade left cascade>
       <Header />
       <About />
@@ -20,7 +32,7 @@ root.render(
       <Contact />
       <Footer />
     </Fade>
-    
+
   </React.StrictMode>
 );
 

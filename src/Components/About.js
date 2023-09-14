@@ -3,14 +3,15 @@ import Container  from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import '../Assets/About.css'
+import sample_resume from '../Assets/sample_resume.pdf';
 import 'tachyons'
-import {Slide,Rotate,Zoom} from 'react-reveal'
+import {Slide,Rotate,Zoom,Fade} from 'react-reveal'
 import back from '../Assets/back.jpg';
 class About extends Component{
     render(){
         return (
             <>
-            <Rotate top left duration={1000} >
+            <Fade duration={3000} cascade >
             <Row>
                 <div className="tc pa3 f3" id="about_back">
                 <h1 className="ttu shadow-1 hover-bg-green br3"> About Me </h1>
@@ -45,9 +46,9 @@ class About extends Component{
                                             <p className="f5">i am self learned guy who is ingenious and cordial, adaptive person</p>
                                             <p className="f5">Who Profoundly relishes to Learn More and More</p>
                                             
-                                            <a className="btnFillup liquidbg f5" href="https://google.com">View Resume</a>
+                                            <a className="btnFillup liquidbg f5" target="_blank" href={sample_resume}>View Resume</a>
                                             
-                                        </div>
+                                    </div>
                                     </Zoom>
                                     </Col>
                                 </Row>
@@ -58,7 +59,7 @@ class About extends Component{
                     </Container>
                 </div>
                 </Row>
-            </Rotate>
+            </Fade>
             </>
         )
     }
