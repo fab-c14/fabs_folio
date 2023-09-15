@@ -834,13 +834,10 @@
   "scripts": {
     "test": "react-scripts test",
     "start": "react-scripts start",
-<<<<<<< HEAD
     "build": "react-scripts build",
-=======
     "predeploy": "react-scripts build",
     "deploy":"gh-pages -d build",
     "test": "react-scripts test",
->>>>>>> 5d092241a1c70bad69db9e45c1c3b484e43e8028
     "eject": "react-scripts eject"
   },
   "keywords": [],
